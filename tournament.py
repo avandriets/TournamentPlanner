@@ -142,7 +142,8 @@ def playerStandings():
         cur.execute(
             """
                 SELECT Players.id, Players.name, COUNT(DISTINCT win.id )
-                AS wins, COUNT(DISTINCT loss.id) + COUNT(DISTINCT win.id ) AS matches
+                AS wins, COUNT(DISTINCT loss.id) + COUNT(DISTINCT win.id ) 
+                AS matches
                 FROM Players
                 LEFT JOIN Matches win ON Players.id = win.winner
                 LEFT JOIN Matches loss ON Players.id = loss.loser

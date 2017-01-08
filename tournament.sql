@@ -28,3 +28,9 @@ CREATE TABLE Matches
     winner INT,
     loser INT
 );
+ALTER TABLE Matches
+ADD CONSTRAINT Matches_Players_id_fk_to_winner
+FOREIGN KEY (winner) REFERENCES Players (id) ON DELETE SET NULL;
+ALTER TABLE Matches
+ADD CONSTRAINT Matches_Players_id_fk_to_looset
+FOREIGN KEY (loser) REFERENCES Players (id) ON DELETE SET NULL
