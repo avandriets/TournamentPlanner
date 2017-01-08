@@ -11,11 +11,11 @@ You need instance of PostgreSQL and Python (I used python 2.7)
 You can use the **psql** command line interface
     - start **psql** from command line
     ```
-    psql
+    $ psql
     ```
     - next execute the sql commands within the sql file from **psql**
     ```
-    \i tournament.sql
+     => \i tournament.sql
     ```
 4. Run test "tournament_test.py"
     ```
