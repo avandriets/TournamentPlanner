@@ -7,14 +7,12 @@ This project works with [PostgreSQL](https://www.postgresql.org/) and [Python](h
 You need instance of PostgreSQL and Python (I used python 2.7)
 
 1. Copy project files to directory
-3. Create database and schema from file "tournament.sql" (There are scripts
-for creating database tables .etc)
-You can use the psql command line interface
-    start psql from command line
+3. Create database and schema from file "tournament.sql" (There are scripts for creating database tables .etc in file)
+You can use the **psql** command line interface, start **psql** from command line
     ```
     psql
     ```
-    next execute the sql commands within the sql file from psql
+    next execute the sql commands within the sql file from **psql**
     ```
     \i tournament.sql
     ```
@@ -22,4 +20,4 @@ You can use the psql command line interface
     ```
     python tournament_test.py
     ```
-5. Analyse result :smiley:
+5. Analyse result  :smiley:
